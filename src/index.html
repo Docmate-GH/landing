@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
+
 <body>
   <div>
     <header class="p-16 flex justify-between">
       <div class="flex-1">
         <h1 class='logo text-2xl'>Docmate</h1>
       </div>
-      <div class="grid grid-cols-3 gap-6 self-center text-center flex-1">
+      <div class="hidden sm:grid grid grid-cols-3 gap-6 self-center text-center flex-1">
         <div>
           <a href="#features">Features</a>
         </div>
@@ -24,72 +26,77 @@
           <a href="https://docs.docmate.io/5a7c975f-8438-46fa-b202-81029241975f">Docs</a>
         </div>
       </div>
-      <div class="flex-1 text-right">
+      <div class="hidden sm:block flex-1 text-right">
         <a href="https://app.docmate.io" class="px-4 py-2">Sign in</a>
         <a href="https://app.docmate.io" class="bg-black text-white px-4 py-2">Sign up</a>
       </div>
     </header>
 
-    <section>
-      <div class="text-center">
-        <h1 class="font-bold text-6xl">Document platform</h1>
-        <h1 class="font-bold text-6xl">for your team</h1>
+    <div class="container mx-auto">
+      <section>
+        <div class="text-center">
+          <h1 class="font-bold text-6xl">Document platform</h1>
+          <h1 class="font-bold text-6xl">for your team</h1>
 
-        <h2 class="mt-8 text-xl">Docmate is a document platform built for developer team.</h2>
-        <h2 class="text-xl">Write markdown, get shareable and beautiful document, without build process.</h2>
-      </div>
-    </section>
-
-    <section>
-      <div class="px-64 mt-12">
-        <img src="/images/main.png" alt="editor view">
-      </div>
-    </section>
-
-    <section class="mt-16 text-center">
-      <h1 class="font-bold text-4xl"><a id="features">Powerful features</a></h1>
-      <div class="flex">
-        <div class="flex-1 text-left p-12 pl-48">
-          <ul class="list-disc leading-loose">
-            <li>Easily organize doc pages by dragging</li>
-            <li>Collabrate with team members</li>
-            <li>Private document (only visible for team members)</li>
-            <li>Use different document template (Docute or Docsify) *</li>
-            <li>Paste to upload images</li>
-          </ul>
-
-          <div class="mt-12">
-            <small class="text-gray-500">* Docsify is not support yet.</small>
+          <div class="px-12 sm:px-0">
+            <h2 class="mt-8 text-xl mb-6 sm:mb-0">Docmate is a document platform built for developer team.</h2>
+            <h2 class="text-xl">Write markdown, get shareable and beautiful document, without build process.</h2>
           </div>
         </div>
-        <div class="flex-1">
-          <img class="inline-block" src="/images/features.png" alt="">
+      </section>
+
+      <section>
+        <div class="mt-12 w-full px-6 sm:px-0">
+          <img class="inline-block" src="/images/main.png" alt="editor view">
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="mt-16 text-center">
-      <h1 class="font-bold text-4xl"><a id="pricing">Pricing</a></h1>
+      <section class="mt-16 text-center">
+        <h1 class="font-bold text-4xl"><a id="features">Powerful features</a></h1>
+        <div class="sm:flex">
+          <div class="flex-1 text-left p-12 sm:pl-48">
+            <ul class="list-disc leading-loose">
+              <li>Easily organize doc pages by dragging</li>
+              <li>Collabrate with team members</li>
+              <li>Private document (only visible for team members)</li>
+              <li>Use different document template (Docute or Docsify) *</li>
+              <li>Paste to upload images</li>
+            </ul>
 
-      <div class="mt-12">
-        <p>
-          Docmate is still under development, all features is free and unstable now. 😃
-        </p>
-      </div>
-    </section>
+            <div class="mt-12">
+              <small class="text-gray-500">* Docsify is not support yet.</small>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img class="inline-block" src="/images/features.png" alt="">
+          </div>
+        </div>
+      </section>
 
-    <section class="mt-16 text-center">
-      <h1 class="font-bold text-4xl">Self managed, for free</h1>
+      <section class="mt-16 text-center">
+        <h1 class="font-bold text-4xl"><a id="pricing">Pricing</a></h1>
 
-      <div class="mt-12">
-        <p>
-          If you are sensitive about content security or privacy, it's totally free for self hosting a Docmate.
-        </p>
-        <p>
-          <a class="mt-12 inline-block bg-gray-900 text-white py-4 px-8" href="https://docs.docmate.io/5a7c975f-8438-46fa-b202-81029241975f">Read the doc</a>
-        </p>
-      </div>
-    </section>
+        <div class="mt-12">
+          <p>
+            Docmate is still under development, all features is free and unstable now. 😃
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-16 text-center">
+        <h1 class="font-bold text-4xl">Self managed, for free</h1>
+
+        <div class="mt-12">
+          <p>
+            If you are sensitive about content security or privacy, it's totally free for self hosting a Docmate.
+          </p>
+          <p>
+            <a class="mt-12 inline-block bg-gray-900 text-white py-4 px-8"
+              href="https://docs.docmate.io/5a7c975f-8438-46fa-b202-81029241975f">Read the doc</a>
+          </p>
+        </div>
+      </section>
+    </div>
 
 
 
@@ -99,4 +106,5 @@
     </footer>
   </div>
 </body>
+
 </html>
