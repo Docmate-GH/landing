@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  font-family: 'Rowdies', cursive;
+}
